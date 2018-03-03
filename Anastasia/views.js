@@ -24,25 +24,24 @@ var GUI = (function() { //IIFE for all Views
         username: user
       });
 
-      var userTasksModel = app.users.where({
-        assignee: user
-      });
-      //returns the first model that it matches
-      var newUserView = new UserView({
-        model: userModel
-      });
-      var newUnassignedTaskView = new UnassignedTasksView();
-      var newUserTasksView = new UserTasksView();
-      newUserView.render(user);
-      newUnassignedTaskView.render();
-      newUserTasksView.render();
-      $("#app").empty();
-      $("#app").append(newUserView.$el);
-      $("#unassignedTasks").append(newUnassignedTaskView.$el);
-      $("#myTasks").append(newUserTasksView.$el);
+      // var userTasksModel = app.users.where({
+      //   assignee: user
+      // });
+      // //returns the first model that it matches
+      // var newUserView = new UserView({
+      //   model: userModel
+      // });
+      // var newUnassignedTaskView = new UnassignedTasksView();
+      // var newUserTasksView = new UserTasksView();
+      // newUserView.render(user);
+      // newUnassignedTaskView.render();
+      // newUserTasksView.render();
+      // $("#app").empty();
+      // $("#app").append(newUserView.$el);
+      // $("#unassignedTasks").append(newUnassignedTaskView.$el);
+      // $("#myTasks").append(newUserTasksView.$el);
     }
   });
-
 
 
   // generic ctor to represent interface:
