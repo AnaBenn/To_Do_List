@@ -1,0 +1,27 @@
+
+
+{
+  box-sizing: border-box;
+}
+
+#dropDown{
+/*	border: solid 5px black;*/
+    font-size: 16px;
+}
+
+#taskStatus{
+  border: solid 5px black;
+    font-size: 16px;
+}
+
+/*Homepage container for login page*/
+#loginViewContainer {
+  width: 600px;
+  height: auto;
+  border: solid 1px black;
+  background-color: tomato;
+  padding: 0 20px 20px 20px;
+  text-align: center;
+}
+
+
